@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Repro Cart Library</title>
+<title>Cart Library</title>
 <style>
   :root{
     --bg:#0f1320; --panel:#171c2e; --panel2:#1e2438; --line:#2c3450;
@@ -87,7 +87,7 @@
 </head>
 <body>
 <header class="top">
-  <h1>&#x1F3AE; Repro Cart Library</h1>
+  <h1>&#x1F3AE; Cart Library</h1>
   <span class="sub" id="tagline">Loading data&hellip;</span>
 </header>
 <div class="layout">
@@ -178,7 +178,7 @@ function boot(data){
   document.getElementById("status").innerHTML="";
   const consoles=[...new Set(DATA.map(d=>d.console))];
   document.getElementById("tagline").textContent =
-    DATA.length + " games • " + consoles.length + " systems • reproduction cartridge catalog";
+    DATA.length + " games • " + consoles.length + " systems • cartridge catalog";
   buildFilters();
   render();
 }
